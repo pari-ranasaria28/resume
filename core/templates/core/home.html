@@ -1,0 +1,36 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <div class="mt-5">
+        <div class="text-center">
+            <img src="{% static 'core/images/pari_photo.jpg' %}" alt="ProfilePic" class = "img-thumbnail rounded-circle mt-5" width="250px" height="250px">
+        </div>
+        <div class="text-white mt-5 mx-5 text-justify">
+            <h1 class="font-weight-bold satisfy-regular">Hello,</h1>
+            <div class="px-4" style="line-height:2rem">
+                <h4 class="text-warning mb-1 border-bottom">Introduction and Education</h4>
+                <p class="text-indent:100px">
+                    My name is Pari Ranasaria, and I am currently pursuing a B.Tech in Computer Science at IIIT Vadodara, with a CPI of 8.21. Over the years, I have worked hard to build a strong academic background, especially in computer science-related subjects like data structures, algorithms, and web development.
+                </p>
+                <h4 class="text-warning mb-1 border-bottom">Aspiration from Python Developer Role</h4>
+                <p>
+                    I am looking forward to working as a Python Developer, where I can use my problem-solving skills and technical knowledge to build meaningful software solutions. I enjoy tackling challenging tasks and learning new technologies to improve my work. I want to be part of a team where I can contribute to real-world projects and grow as a software developer.
+                </p>
+                <h4 class="text-warning mb-1 border-bottom">Skills</h4>
+                <p>
+                    I have a good grasp of programming languages like Python, Java, PHP, Django and JavaScript. I am also familiar with front-end tools like HTML, CSS, and Bootstrap. Besides this, I am skilled in using Git, Linux, and Microsoft tools. My knowledge of algorithms, data structures, and object-oriented programming helps me solve problems efficiently.
+                </p>
+                {% comment %} <h4 class="text-warning mb-1 border-bottom">E-Commerce Project</h4>
+                <p>
+                    I worked on creating an e-commerce website, where I designed an admin area to manage products, categories, brands, orders, payments, and users. I also built a user-friendly front-end using HTML, CSS, JavaScript, and Bootstrap to ensure a seamless shopping experience. The website was developed using PHP, Apache, and MySQL to handle data and ensure smooth functionality.
+                </p> {% endcomment %}
+            </div>
+        </div>
+        <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+    </div>
+</div>
+{% endblock %}
